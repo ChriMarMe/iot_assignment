@@ -11,4 +11,6 @@ RUN set -eux;   \
     export GIT_SSL_NO_VERIFY=1;     \
     git clone --depth=1 https://github.com/ChriMarMe/iot_rest_access;
 
-CMD ["npm run start", "--prefex ./iot_rest_access"]
+WORKDIR /home/riot/Uni/IoT/SBL/iot_rest_access
+
+CMD ["node", "server.js"]
