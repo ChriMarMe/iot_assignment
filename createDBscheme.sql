@@ -4,9 +4,9 @@ CREATE SCHEMA IF NOT EXISTS iotproject;
 
 CREATE TABLE iotproject.soilmoisture(
     id SERIAL PRIMARY KEY,
-    hardware_flag VARCHAR(1),
-    interrupt_flag VARCHAR(1),
-    sensor_flag VARCHAR(1),
+    hardware_flag REAL,
+    interrupt_flag REAL,
+    sensor_flag REAL,
     tempc_ds18b20 REAL,
     batterie REAL,
     conduct_soil REAL,
